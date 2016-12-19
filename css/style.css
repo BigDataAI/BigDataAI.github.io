@@ -101,6 +101,9 @@ p {
 .navbar-default .nav > li.active > a:focus:hover {
   background-color: transparent;
 }
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: rgba(215, 215, 215, 0.12);
+}
 @media (min-width: 768px) {
   .navbar-default {
     background-color: transparent;
@@ -498,7 +501,6 @@ body {
 
 .services-text {
 position: absolute;
-background: #000;
 width: 100%;
 }
 
@@ -576,3 +578,12 @@ right: 20%;
   }
 }
 
+@media (max-width: 768px) {
+  .services-text-item {
+    position: static;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+  }
+  
+}
