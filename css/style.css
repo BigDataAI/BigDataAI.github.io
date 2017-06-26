@@ -163,6 +163,7 @@ header .header-overlay {
   opacity: .3;
   background: url("../img/gplaypattern.png");
   position: absolute;
+  overflow: none;
 }
 header .header-content {
   text-align: center;
@@ -474,7 +475,13 @@ body {
 }
 @media (max-width: 768px) {
   .network {
-    display: none;
+     height: 400px;
+  }
+  header .header-content-img {
+    padding: 0px;
+    position: absolute; 
+    top: -350px;
+    right: -270px;
   }
 }
 .decisions {
